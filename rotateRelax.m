@@ -5,8 +5,7 @@ function[mOut] = rotateRelax(mInput,beta,t,T1r,T2r,density,N_pixel)
   else
     mR = rotation_z(mInput,beta);
     mOut = relax(mR,t,T1r,T2r,density,N_pixel);
-  end 
-          
+  end         
 end
 
 function [moutput] = rotation_z(minput,beta)
@@ -30,11 +29,7 @@ end
 
    
 function [moutput] = relax(minput,t,T1r,T2r,density,N_pixel)
-
     E1 = exp(-t./T1r(:)');
-
     E2 = exp(-t./T2r(:)');
-
     moutput = [E2;E2;E1].* minput + repmat(1-E1,3,1).*[zeros(1,N_pixel*N_pixel); zeros(1,N_pixel*N_pixel); density(:)'];
-
 end
