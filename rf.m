@@ -12,6 +12,5 @@ function [mout] = rf_x(min,rf,rph)
            -sin(-rph) cos(-rph) 0.0;
             0.0 0.0 1.0];
 
-
    mout = rdzp*rx*rdzm*min; % do RF pulse
 end
