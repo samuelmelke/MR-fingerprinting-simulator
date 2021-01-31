@@ -1,5 +1,4 @@
 function [TR]=generate_TR(num_of_TR)
-%  TR=generate_TR(1000);
 TR=[13.173820
 13.143820
 13.114830
