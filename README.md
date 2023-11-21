@@ -1,8 +1,8 @@
-# A simulator for MR Fingerprinting(MRF)
+# A 2D simulator for MR Fingerprinting(MRF)
 
-This simulator was initialy developed to provide a tool for testing various reconstruction algorithms and pulse sequences under the MRF framework. 
+This simulator was initially developed to provide a tool for testing various reconstruction algorithms and pulse sequences under the MRF framework. 
 
-The simulator does not only simulate MRF steps like dictionary generation and patern mattching. It also simulates the whole MRI process by MR machines such as MR image acquisition through the application of pulse sequences. Additionaly, it generates numerical phantoms. The general block diagram of the simulator is shown below
+The simulator does not only simulate MRF steps like dictionary generation and pattern matching. It also simulates the whole MRI process by MR machines such as MR image acquisition through the application of pulse sequences. Additionally, it generates numerical phantoms. The general block diagram of the simulator is shown below
 
 <img src="./images/block_diag.png" alt="block_diagram" width="800"/>
 
@@ -24,7 +24,7 @@ Here, the function generates a series of undersampled data using discrete Bloch 
 ### Recon_image.m
 This function employs Jeff Fessler's NUFFT (Non-Uniform Fast Fourier Transform) toolbox to reconstruct the sampled data.
 ### dict_true
-This function generates MRF dictionary with pseudo-random TRs and flip angles for a given T1, T2 and off resonance values of tissues.
+This function generates MRF dictionary with pseudo-random TRs and flip angles for a given T1, T2, and off-resonance values of tissues.
 Customized from: https://github.com/mgolbabaee/CoverBLIP
 
 ### fast_matching.m
